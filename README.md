@@ -110,19 +110,19 @@ A test case is a set of conditions or inputs designed to evaluate whether a syst
 
 Three of the six tests failed, resulting in a **50% failure rate**.
 
-**Right Angle Test failure:**
+<p>**Right Angle Test failure:**</p>
 
 <p>3, 5, 4 should be right-angled</p>
 <p>Expected "right-angled"</p>
 <p>Actual Result  "scalene"</p>
 
-**Impossible triangles test failure:**
+<p>**Impossible triangles test failure:**</p>
 
 <p>1000, 10, 10 should be impossible,</p>
 <p>Expected "impossible"</p>
 <p>Actual Result  "scalene"</p>
 
-**Isossceles triangles teste failure:**
+<p>**Isossceles triangles teste failure:**</p>
 
 <p>5, 4, 4 should be isosceles</p>
 <p>Expected "isosceles"</p>
