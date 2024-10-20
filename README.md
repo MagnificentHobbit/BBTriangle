@@ -106,7 +106,7 @@ A test case is a set of conditions or inputs designed to evaluate whether a syst
 
 
 
-## TESTS SUMMARY
+## BLACKBOX TESTS SUMMARY
 
 Three of the six tests failed, resulting in a **50% failure rate**.
 
