@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🌴 **Welcome to the Bahamas** 🌴
 
 <div align="center">
@@ -11,8 +13,6 @@
 ### 🍹 **Where Every Hour is Happy Hour** 🍍
 
 ---
-
-![Bahamas Vibes](https://example.com/bahamas-image.jpg)
 
 </div>
 
