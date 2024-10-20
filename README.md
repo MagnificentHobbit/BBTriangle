@@ -15,6 +15,8 @@ Boundary Value Analysis is a software testing technique that focuses on testing 
 | **Input2** |   0	 | maxInt|
 | **Input3** |	 0	 | maxInt|
 
+The corresponding minimum and maximum input values for the "int" primitive type were 0 and maxInt = 2147483647.
+
 
 ### Equivalent Class Partitioning (ECP)
 Equivalent Class Partitioning is a testing technique that divides input data into partitions or classes where each class is expected to exhibit similar behavior. Instead of testing all possible inputs, testers select representative values from each partition. This helps reduce the number of test cases while ensuring that each class of inputs is covered. Classes can be defined as valid or invalid, ensuring the application handles all types of inputs correctly.
