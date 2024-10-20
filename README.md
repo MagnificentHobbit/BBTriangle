@@ -1,4 +1,5 @@
-**Boundary Value Analysis**
+### Boundary Value Analysis (BVA)
+Boundary Value Analysis is a software testing technique that focuses on testing the extreme boundaries of input ranges. By selecting test cases at the edge of input boundaries (both minimum and maximum values), BVA helps in identifying defects related to limit conditions. This technique is effective in discovering off-by-one errors and issues that occur at the boundary of valid input ranges.
 
 | Inputs |  Min	 |  Máx  |
 |--------|-------|-------|
@@ -7,7 +8,8 @@
 | **Input3** |	 0	 | maxInt|
 
 
-**Equivalent Class Partitioning**
+### Equivalent Class Partitioning (ECP)
+Equivalent Class Partitioning is a testing technique that divides input data into partitions or classes where each class is expected to exhibit similar behavior. Instead of testing all possible inputs, testers select representative values from each partition. This helps reduce the number of test cases while ensuring that each class of inputs is covered. Classes can be defined as valid or invalid, ensuring the application handles all types of inputs correctly.
 
 | ECP      | Pre Conditions             | Valid Class                                                 | Invalid Class                                     |
 |----------|----------------------------|--------------------------------------------------------------|--------------------------------------------------|
@@ -43,9 +45,8 @@
 | input restrictions | s1 != s2; s1 != s3; s2 != s3 | s1 = s2 or s1 = s3 or s2 = s3                    |                                                  |
 
 
-
-
-**Test Cases**
+### Test Cases
+A test case is a set of conditions or inputs designed to evaluate whether a system behaves as expected. Each test case typically includes specific inputs, execution conditions, and expected outcomes. Test cases help systematically validate the correctness, performance, or compliance of software with requirements.
 
 | Test Case     | T.C. Id | Input1    | Input2    | Input3    | Execution Conditions | Expected Results              | Obtained Result | ECP  |
 |---------------|---------|-----------|-----------|-----------|----------------------|-------------------------------|-----------------|------|
