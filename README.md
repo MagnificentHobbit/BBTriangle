@@ -51,43 +51,8 @@ Equivalent Class Partitioning is a testing technique that divides input data int
 | Scalene    | no of inputs         | = 3                                                         | != 3                                                     |
 |                | type of inputs       | int                                                     | != int                                                   |
 |                | input restrictions   | s1 != s2 ; s1 != s3; s2 != s3                           | s1 = s2 or s1 = s3 or s2 = s3                            |
+
  
-
-/*
-| ECP      | Pre Conditions             | Valid Class                                                 | Invalid Class                                     |
-|----------|----------------------------|--------------------------------------------------------------|--------------------------------------------------|
-| **ECP1** | s1 > 0; s2 > 0; s3 > 0     | s1 <= 0; s2 <= 0; s3 <= 0                                    |                                                  |
-| **Use Case: Impossible**              |                                                              |                                                  |
-| Criteria | Valid Class                | Invalid Class                                                |                                                  |
-| no of inputs | = 3                    | != 3                                                         |                                                  |
-| type of inputs | int                  | != int                                                       |                                                  |
-| input restrictions | s1 < s2 + s3 or s2 < s3 + s1 or s3 < s1 + s2 | s1 > s2 + s3 or s2 > s3 + s1 or s3 > s1 + s2     |                                  |
-| **ECP2** | s1 > 0; s2 > 0; s3 > 0     | s1 <= 0; s2 <= 0; s3 <= 0                                    |                                                  |
-| **Use Case: Equilateral**             |                                                              |                                                  |
-| Criteria | Valid Class                | Invalid Class                                                |                                                  |
-| no of inputs | = 3                    | != 3                                                         |                                                  |
-| type of inputs | int                  | != int                                                       |                                                  |
-| input restrictions | s1 = s2 = s3     | s1 != s2 or s1 != s3 or s2 != s3                             |                                                  |
-| **ECP3** | s1 > 0; s2 > 0; s3 > 0     | s1 <= 0; s2 <= 0; s3 <= 0                                    |                                                  |
-| **Use Case: Isosceles**               |                                                              |                                                  |
-| Criteria | Valid Class                | Invalid Class                                                |                                                  |
-| no of inputs | = 3                    | != 3                                                         |                                                  |
-| type of inputs | int                  | != int                                                       |                                                  |
-| input restrictions | s1 = s2 or s1 = s3 or s2 = s3 | s1 != s2 and s1 != s3 and s2 != s3              |                                                  |
-| **ECP4** | s1 > 0; s2 > 0; s3 > 0     | s1 <= 0; s2 <= 0; s3 <= 0                                    |                                                  |
-| **Use Case: Right Angled**            |                                                              |                                                  |
-| Criteria | Valid Class                | Invalid Class                                                |                                                  |
-| no of inputs | = 3                    | != 3                                                         |                                                  |
-| type of inputs | int                  | != int                                                       |                                                  |
-| input restrictions | s1^2 = s2^2 + s3^2 or s2^2 = s1^2 + s3^2 or s3^2 = s1^2 + s2^2 | s1^2 != s2^2 + s3^2 and s2^2 != s1^2 + s3^2 and s3^2 != s1^2 + s2^2 |
-| **ECP5** | s1 > 0; s2 > 0; s3 > 0     | s1 <= 0; s2 <= 0; s3 <= 0                                    |                                                  |
-| **Use Case: Scalene**                 |                                                              |                                                  |
-| Criteria | Valid Class                | Invalid Class                                                |                                                  |
-| no of inputs | = 3                    | != 3                                                         |                                                  |
-| type of inputs | int                  | != int                                                       |                                                  |
-| input restrictions | s1 != s2; s1 != s3; s2 != s3 | s1 = s2 or s1 = s3 or s2 = s3                    |                                                  |
-*/
-
 ### Test Cases
 A test case is a set of conditions or inputs designed to evaluate whether a system behaves as expected. Each test case typically includes specific inputs, execution conditions, and expected outcomes. Test cases help systematically validate the correctness, performance, or compliance of software with requirements.
 
