@@ -112,18 +112,18 @@ Three of the six tests failed, resulting in a **50% failure rate**.
 
 **Right Angle Test failure:**
 
-3, 5, 4 should be right-angled
-Expected :right-angled
-Actual   :scalene
+3, 5, 4 should be right-angled,
+Expected "right-angled"
+Actual Result  "scalene"
 
 **Impossible triangles test failure:**
 
-1000, 10, 10 should be impossible
-Expected :impossible
-Actual   :scalene
+1000, 10, 10 should be impossible,
+Expected "impossible"
+Actual Result  "scalene"
 
 **Isossceles triangles teste failure:**
 
-5, 4, 4 should be isosceles
-Expected :isosceles
-Actual   :scalene
+5, 4, 4 should be isosceles,
+Expected "isosceles"
+Actual Result  "scalene"
