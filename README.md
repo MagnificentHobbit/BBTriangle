@@ -2,16 +2,6 @@
 
 # 🌴 **Welcome to the Bahamas** 🌴
 
-<div align="center">
-
-## 🏝️ *The Land of Sun, Sand, and Sea!* 🏝️
-
-### 🎉 **Relax, Unwind, and Soak Up Paradise** 🌞
-
-### 🦩 **Experience the Ultimate Escape** 🌊
-
-### 🍹 **Where Every Hour is Happy Hour** 🍍
-
 ---
 
 </div>
