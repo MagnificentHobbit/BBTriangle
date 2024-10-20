@@ -14,7 +14,7 @@ Equivalent Class Partitioning is a testing technique that divides input data int
 
 | **ECP1**       | **Pre Conditions**  | **Valid Class**                                          | **Invalid Class**                                        |
 |----------------|---------------------|----------------------------------------------------------|----------------------------------------------------------|
-| Pre Conditions | s1 > 0; s2 > 0; s3 > 0 | s1 > 0; s2 > 0; s3 > 0                                   | s1 <= 0; s2 <= 0; s3 <= 0                                |
+|                | s1 > 0; s2 > 0; s3 > 0 | s1 > 0; s2 > 0; s3 > 0                                | s1 <= 0; s2 <= 0; s3 <= 0                                |
 | **Use Case**   | **Criteria**        | **Valid Class**                                          | **Invalid Class**                                        |
 | Impossible     | no of inputs         | = 3                                                      | != 3                                                     |
 |                | type of inputs       | int                                                      | != int                                                   |
