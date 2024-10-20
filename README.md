@@ -11,6 +11,7 @@ Boundary Value Analysis is a software testing technique that focuses on testing 
 ### Equivalent Class Partitioning (ECP)
 Equivalent Class Partitioning is a testing technique that divides input data into partitions or classes where each class is expected to exhibit similar behavior. Instead of testing all possible inputs, testers select representative values from each partition. This helps reduce the number of test cases while ensuring that each class of inputs is covered. Classes can be defined as valid or invalid, ensuring the application handles all types of inputs correctly.
 
+|------------|---------------------|----------------------------------------------------------|----------------------------------------------------------|
 |   ECP1         | Pre Conditions      | s1 > 0; s2 > 0; s3 > 0                                   | s1<=0 s2 <=0 s3 <= 0                                     |
 | **Use Case**   | **Criteria**        | **Valid Class**                                          | **Invalid Class**                                        |
 |------------|---------------------|----------------------------------------------------------|----------------------------------------------------------|
