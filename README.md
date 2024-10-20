@@ -105,3 +105,25 @@ A test case is a set of conditions or inputs designed to evaluate whether a syst
 |               | BVA14   | 0         | 0         | -1        | N.A.                 | Invalid input                 | OK              |      |
 
 
+
+**[TESTS SUMMARY]**
+
+Three of the six tests failed, resulting in a **50% failure rate**.
+
+**Right Angle Test failure:**
+
+3, 5, 4 should be right-angled
+Expected :right-angled
+Actual   :scalene
+
+**Impossible triangles test failure:**
+
+1000, 10, 10 should be impossible
+Expected :impossible
+Actual   :scalene
+
+**Isossceles triangles teste failure:**
+
+5, 4, 4 should be isosceles
+Expected :isosceles
+Actual   :scalene
