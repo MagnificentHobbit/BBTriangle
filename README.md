@@ -112,18 +112,18 @@ Three of the six tests failed, resulting in a **50% failure rate**.
 
 **Right Angle Test failure:**
 
-3, 5, 4 should be right-angled,
-Expected "right-angled"
-Actual Result  "scalene"
+<p>3, 5, 4 should be right-angled</p>
+<p>Expected "right-angled"</p>
+<p>Actual Result  "scalene"</p>
 
 **Impossible triangles test failure:**
 
-1000, 10, 10 should be impossible,
-Expected "impossible"
-Actual Result  "scalene"
+<p>1000, 10, 10 should be impossible,</p>
+<p>Expected "impossible"</p>
+<p>Actual Result  "scalene"</p>
 
 **Isossceles triangles teste failure:**
 
-5, 4, 4 should be isosceles,
-Expected "isosceles"
-Actual Result  "scalene"
+<p>5, 4, 4 should be isosceles</p>
+<p>Expected "isosceles"</p>
+<p>Actual Result  "scalene"</p>
