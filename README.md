@@ -14,43 +14,44 @@ Equivalent Class Partitioning is a testing technique that divides input data int
 
 | **ECP1**       | **Pre Conditions**  | **Valid Class**                                          | **Invalid Class**                                        |
 |----------------|---------------------|----------------------------------------------------------|----------------------------------------------------------|
-|                | <div align="center">s1 > 0; s2 > 0; s3 > 0 | <div align="center">s1 > 0; s2 > 0; s3 > 0                                | <div align="center">s1 <= 0; s2 <= 0; s3 <= 0                                |
+| <div align="center">Pre Conditions</div> | <div align="center">s1 > 0; s2 > 0; s3 > 0</div> | <div align="center">s1 > 0; s2 > 0; s3 > 0</div>          | <div align="center">s1 <= 0; s2 <= 0; s3 <= 0</div>       |
 | **Use Case**   | **Criteria**        | **Valid Class**                                          | **Invalid Class**                                        |
-| Impossible     | no of inputs         | = 3                                                      | != 3                                                     |
-|                | type of inputs       | int                                                      | != int                                                   |
-|                | input restrictions   | s1 < s2 + s3 or s2 < s3 + s1 or s3 < s1 + s2             | s1 > s2 + s3 or s2 > s3 + s1 or s3 > s1 + s2             |
+| <div align="center">Impossible</div> | <div align="center">no of inputs</div> | <div align="center">= 3</div>                            | <div align="center">!= 3</div>                           |
+|                | <div align="center">type of inputs</div> | <div align="center">int</div>                            | <div align="center">!= int</div>                         |
+|                | <div align="center">input restrictions</div> | <div align="center">s1 < s2 + s3 or s2 < s3 + s1 or s3 < s1 + s2</div> | <div align="center">s1 > s2 + s3 or s2 > s3 + s1 or s3 > s1 + s2</div> |
 
 | **ECP2**       | **Pre Conditions**  | **Valid Class**                                          | **Invalid Class**                                        |
 |----------------|---------------------|----------------------------------------------------------|----------------------------------------------------------|
-| Pre Conditions | s1 > 0; s2 > 0; s3 > 0 | s1 > 0; s2 > 0; s3 > 0                                   | s1 <= 0; s2 <= 0; s3 <= 0                             |
+| <div align="center">Pre Conditions</div> | <div align="center">s1 > 0; s2 > 0; s3 > 0</div> | <div align="center">s1 > 0; s2 > 0; s3 > 0</div>          | <div align="center">s1 <= 0; s2 <= 0; s3 <= 0</div>       |
 | **Use Case**   | **Criteria**        | **Valid Class**                                          | **Invalid Class**                                        |
-| Equilateral    | no of inputs         | = 3                                                      | != 3                                                     |
-|                | type of inputs       | int                                                      | != int                                                   |
-|                | input restrictions   | s1 = s2 = s3                                                | s1 != s2 or s1!= s3 or s2!=s3                       |
+| <div align="center">Equilateral</div> | <div align="center">no of inputs</div> | <div align="center">= 3</div>                            | <div align="center">!= 3</div>                           |
+|                | <div align="center">type of inputs</div> | <div align="center">int</div>                            | <div align="center">!= int</div>                         |
+|                | <div align="center">input restrictions</div> | <div align="center">s1 = s2 = s3</div>                    | <div align="center">s1 != s2 or s1 != s3 or s2 != s3</div> |
 
 | **ECP3**       | **Pre Conditions**  | **Valid Class**                                          | **Invalid Class**                                        |
 |----------------|---------------------|----------------------------------------------------------|----------------------------------------------------------|
-| Pre Conditions | s1 > 0; s2 > 0; s3 > 0 | s1 > 0; s2 > 0; s3 > 0                                   | s1 <= 0; s2 <= 0; s3 <= 0                             |
+| <div align="center">Pre Conditions</div> | <div align="center">s1 > 0; s2 > 0; s3 > 0</div> | <div align="center">s1 > 0; s2 > 0; s3 > 0</div>          | <div align="center">s1 <= 0; s2 <= 0; s3 <= 0</div>       |
 | **Use Case**   | **Criteria**        | **Valid Class**                                          | **Invalid Class**                                        |
-| Isossceles    | no of inputs         | = 3                                                      | != 3                                                     |
-|                | type of inputs       | int                                                      | != int                                                   |
-|                | input restrictions   | s1 = s2 or s1 = s3 or s2 = s3                         | s1 != s2 and s1 != s3 and s2 != s3                       |
+| <div align="center">Isosceles</div>  | <div align="center">no of inputs</div> | <div align="center">= 3</div>                            | <div align="center">!= 3</div>                           |
+|                | <div align="center">type of inputs</div> | <div align="center">int</div>                            | <div align="center">!= int</div>                         |
+|                | <div align="center">input restrictions</div> | <div align="center">s1 = s2 or s1 = s3 or s2 = s3</div>    | <div align="center">s1 != s2 and s1 != s3 and s2 != s3</div> |
 
 | **ECP4**       | **Pre Conditions**  | **Valid Class**                                          | **Invalid Class**                                        |
 |----------------|---------------------|----------------------------------------------------------|----------------------------------------------------------|
-| Pre Conditions | s1 > 0; s2 > 0; s3 > 0 | s1 > 0; s2 > 0; s3 > 0                                   | s1 <= 0; s2 <= 0; s3 <= 0                             |
+| <div align="center">Pre Conditions</div> | <div align="center">s1 > 0; s2 > 0; s3 > 0</div> | <div align="center">s1 > 0; s2 > 0; s3 > 0</div>          | <div align="center">s1 <= 0; s2 <= 0; s3 <= 0</div>       |
 | **Use Case**   | **Criteria**        | **Valid Class**                                          | **Invalid Class**                                        |
-| Right Angled    | no of inputs         | = 3                                                      | != 3                                                   |
-|                | type of inputs       | int                                                      | != int                                                  |
-|                | input restrictions   | s1^2 = s2^2 + s3^2  or s2^2 = s1^2 + s3^2 or s3^2 = s1^2 + s2^2                 | s1^2 != s2^2 + s3^2 and s2^2 != s1^2 + s3^2 and s3^2 != s1^2 + s2^2                       |
+| <div align="center">Right Angled</div> | <div align="center">no of inputs</div> | <div align="center">= 3</div>                            | <div align="center">!= 3</div>                           |
+|                | <div align="center">type of inputs</div> | <div align="center">int</div>                            | <div align="center">!= int</div>                         |
+|                | <div align="center">input restrictions</div> | <div align="center">s1^2 = s2^2 + s3^2 or s2^2 = s1^2 + s3^2 or s3^2 = s1^2 + s2^2</div> | <div align="center">s1^2 != s2^2 + s3^2 and s2^2 != s1^2 + s3^2 and s3^2 != s1^2 + s2^2</div> |
 
 | **ECP5**       | **Pre Conditions**  | **Valid Class**                                          | **Invalid Class**                                        |
 |----------------|---------------------|----------------------------------------------------------|----------------------------------------------------------|
-| Pre Conditions | s1 > 0; s2 > 0; s3 > 0 | s1 > 0; s2 > 0; s3 > 0                                | s1 <= 0; s2 <= 0; s3 <= 0                                |
+| <div align="center">Pre Conditions</div> | <div align="center">s1 > 0; s2 > 0; s3 > 0</div> | <div align="center">s1 > 0; s2 > 0; s3 > 0</div>          | <div align="center">s1 <= 0; s2 <= 0; s3 <= 0</div>       |
 | **Use Case**   | **Criteria**        | **Valid Class**                                          | **Invalid Class**                                        |
-| Scalene    | no of inputs         | = 3                                                         | != 3                                                     |
-|                | type of inputs       | int                                                     | != int                                                   |
-|                | input restrictions   | s1 != s2 ; s1 != s3; s2 != s3                           | s1 = s2 or s1 = s3 or s2 = s3                            |
+| <div align="center">Scalene</div>     | <div align="center">no of inputs</div> | <div align="center">= 3</div>                            | <div align="center">!= 3</div>                           |
+|                | <div align="center">type of inputs</div> | <div align="center">int</div>                            | <div align="center">!= int</div>                         |
+|                | <div align="center">input restrictions</div> | <div align="center">s1 != s2; s1 != s3; s2 != s3</div>     | <div align="center">s1 = s2 or s1 = s3 or s2 = s3</div>   |
+
 
  
 ### Test Cases
