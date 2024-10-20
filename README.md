@@ -1,5 +1,51 @@
+**Boundary Value Analysis**
 
-Equivalent Class Partitioning tests
+| Inputs |  Min	 |  Máx  |
+|--------|-------|-------|
+| **Input1** |	 0	 | maxInt|
+| **Input2** |   0	 | maxInt|
+| **Input3** |	 0	 | maxInt|
+
+
+**Equivalent Class Partitioning**
+
+| ECP      | Pre Conditions             | Valid Class                                                 | Invalid Class                                     |
+|----------|----------------------------|--------------------------------------------------------------|--------------------------------------------------|
+| **ECP1** | s1 > 0; s2 > 0; s3 > 0     | s1 <= 0; s2 <= 0; s3 <= 0                                    |                                                  |
+| **Use Case: Impossible**              |                                                              |                                                  |
+| Criteria | Valid Class                | Invalid Class                                                |                                                  |
+| no of inputs | = 3                    | != 3                                                         |                                                  |
+| type of inputs | int                  | != int                                                       |                                                  |
+| input restrictions | s1 < s2 + s3 or s2 < s3 + s1 or s3 < s1 + s2 | s1 > s2 + s3 or s2 > s3 + s1 or s3 > s1 + s2     |                                  |
+| **ECP2** | s1 > 0; s2 > 0; s3 > 0     | s1 <= 0; s2 <= 0; s3 <= 0                                    |                                                  |
+| **Use Case: Equilateral**             |                                                              |                                                  |
+| Criteria | Valid Class                | Invalid Class                                                |                                                  |
+| no of inputs | = 3                    | != 3                                                         |                                                  |
+| type of inputs | int                  | != int                                                       |                                                  |
+| input restrictions | s1 = s2 = s3     | s1 != s2 or s1 != s3 or s2 != s3                             |                                                  |
+| **ECP3** | s1 > 0; s2 > 0; s3 > 0     | s1 <= 0; s2 <= 0; s3 <= 0                                    |                                                  |
+| **Use Case: Isosceles**               |                                                              |                                                  |
+| Criteria | Valid Class                | Invalid Class                                                |                                                  |
+| no of inputs | = 3                    | != 3                                                         |                                                  |
+| type of inputs | int                  | != int                                                       |                                                  |
+| input restrictions | s1 = s2 or s1 = s3 or s2 = s3 | s1 != s2 and s1 != s3 and s2 != s3              |                                                  |
+| **ECP4** | s1 > 0; s2 > 0; s3 > 0     | s1 <= 0; s2 <= 0; s3 <= 0                                    |                                                  |
+| **Use Case: Right Angled**            |                                                              |                                                  |
+| Criteria | Valid Class                | Invalid Class                                                |                                                  |
+| no of inputs | = 3                    | != 3                                                         |                                                  |
+| type of inputs | int                  | != int                                                       |                                                  |
+| input restrictions | s1^2 = s2^2 + s3^2 or s2^2 = s1^2 + s3^2 or s3^2 = s1^2 + s2^2 | s1^2 != s2^2 + s3^2 and s2^2 != s1^2 + s3^2 and s3^2 != s1^2 + s2^2 |
+| **ECP5** | s1 > 0; s2 > 0; s3 > 0     | s1 <= 0; s2 <= 0; s3 <= 0                                    |                                                  |
+| **Use Case: Scalene**                 |                                                              |                                                  |
+| Criteria | Valid Class                | Invalid Class                                                |                                                  |
+| no of inputs | = 3                    | != 3                                                         |                                                  |
+| type of inputs | int                  | != int                                                       |                                                  |
+| input restrictions | s1 != s2; s1 != s3; s2 != s3 | s1 = s2 or s1 = s3 or s2 = s3                    |                                                  |
+
+
+
+
+**Test Cases**
 
 | Test Case     | T.C. Id | Input1    | Input2    | Input3    | Execution Conditions | Expected Results              | Obtained Result | ECP  |
 |---------------|---------|-----------|-----------|-----------|----------------------|-------------------------------|-----------------|------|
@@ -37,3 +83,5 @@ Equivalent Class Partitioning tests
 |               | BVA12   | -1        | 0         | 0         | N.A.                 | Invalid input                 | OK              |      |
 |               | BVA13   | 0         | -1        | 0         | N.A.                 | Invalid input                 | OK              |      |
 |               | BVA14   | 0         | 0         | -1        | N.A.                 | Invalid input                 | OK              |      |
+
+
