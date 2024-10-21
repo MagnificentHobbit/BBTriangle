@@ -89,6 +89,9 @@ A test case is a set of conditions or inputs designed to evaluate whether a syst
 | **Scalene**   | 18      | 2         | 3         | 4         | N.A.                 | String: "scalene"              | "scalene"       | ECP5 |
 |               | 19      | 4         | 3         | 2         | N.A.                 | String: "scalene"              | "scalene"       |      |
 |               | 20      | 3         | 4         | 2         | N.A.                 | String: "scalene"              | "scalene"       |      |
+
+| Test Case     | T.C. Id | Input1    | Input2    | Input3    | Execution Conditions | Expected Results              | Obtained Result | ECP  |
+|---------------|---------|-----------|-----------|-----------|----------------------|-------------------------------|-----------------|------|
 | **BVA**       | BVA1    | 0         | 0         | 0         | N.A.                 | Valid input                   | OK              | ECP6 |
 |               | BVA2    | 1         | 0         | 0         | N.A.                 | Valid input                   | OK              |      |
 |               | BVA3    | maxInt-1  | maxInt-1  | maxInt-1  | N.A.                 | Valid input                   | OK              |      |
