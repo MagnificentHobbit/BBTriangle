@@ -30,9 +30,6 @@ The corresponding minimum and maximum input values for the "int" primitive type 
 |               | BVA9    | 0         | 0         | maxInt    | N.A.                 | Valid input                   | OK              |      |
 |               | BVA10   | 0         | maxInt+1  | 0         | N.A.                 | Invalid input                 | OK              |      |
 |               | BVA11   | maxInt+1  | 1         | 1         | N.A.                 | Invalid input                 | OK              |      |
-|               | BVA12   | -1        | 0         | 0         | N.A.                 | Invalid input                 | OK              |      |
-|               | BVA13   | 0         | -1        | 0         | N.A.                 | Invalid input                 | OK              |      |
-|               | BVA14   | 0         | 0         | -1        | N.A.                 | Invalid input                 | OK              |      |
 
 
 ### Equivalent Class Partitioning (ECP)
