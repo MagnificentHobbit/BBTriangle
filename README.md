@@ -17,6 +17,23 @@ Boundary Value Analysis is a software testing technique that focuses on testing 
 
 The corresponding minimum and maximum input values for the "int" primitive type were 0 and maxInt = 2147483647.
 
+| Test Case     | T.C. Id | Input1    | Input2    | Input3    | Execution Conditions | Expected Results              | Obtained Result | ECP  |
+|---------------|---------|-----------|-----------|-----------|----------------------|-------------------------------|-----------------|------|
+| **BVA**       | BVA1    | 0         | 0         | 0         | N.A.                 | Valid input                   | OK              | ECP6 |
+|               | BVA2    | 1         | 0         | 0         | N.A.                 | Valid input                   | OK              |      |
+|               | BVA3    | maxInt-1  | maxInt-1  | maxInt-1  | N.A.                 | Valid input                   | OK              |      |
+|               | BVA4    | maxInt    | maxInt    | maxInt    | N.A.                 | Valid input                   | OK              |      |
+|               | BVA5    | maxInt+1  | maxInt+1  | maxInt+1  | N.A.                 | Invalid input                 | OK              |      |
+|               | BVA6    | 0         | maxInt    | 0         | N.A.                 | Valid input                   | OK              |      |
+|               | BVA7    | 1         | maxInt-1  | 1         | N.A.                 | Valid input                   | OK              |      |
+|               | BVA8    | maxInt-1  | 0         | maxInt-1  | N.A.                 | Valid input                   | OK              |      |
+|               | BVA9    | 0         | 0         | maxInt    | N.A.                 | Valid input                   | OK              |      |
+|               | BVA10   | 0         | maxInt+1  | 0         | N.A.                 | Invalid input                 | OK              |      |
+|               | BVA11   | maxInt+1  | 1         | 1         | N.A.                 | Invalid input                 | OK              |      |
+|               | BVA12   | -1        | 0         | 0         | N.A.                 | Invalid input                 | OK              |      |
+|               | BVA13   | 0         | -1        | 0         | N.A.                 | Invalid input                 | OK              |      |
+|               | BVA14   | 0         | 0         | -1        | N.A.                 | Invalid input                 | OK              |      |
+
 
 ### Equivalent Class Partitioning (ECP)
 Equivalent Class Partitioning is a testing technique that divides input data into partitions or classes where each class is expected to exhibit similar behavior. Instead of testing all possible inputs, testers select representative values from each partition. This helps reduce the number of test cases while ensuring that each class of inputs is covered. Classes can be defined as valid or invalid, ensuring the application handles all types of inputs correctly.
@@ -90,22 +107,6 @@ A test case is a set of conditions or inputs designed to evaluate whether a syst
 |               | 19      | 4         | 3         | 2         | N.A.                 | String: "scalene"              | "scalene"       |      |
 |               | 20      | 3         | 4         | 2         | N.A.                 | String: "scalene"              | "scalene"       |      |
 
-| Test Case     | T.C. Id | Input1    | Input2    | Input3    | Execution Conditions | Expected Results              | Obtained Result | ECP  |
-|---------------|---------|-----------|-----------|-----------|----------------------|-------------------------------|-----------------|------|
-| **BVA**       | BVA1    | 0         | 0         | 0         | N.A.                 | Valid input                   | OK              | ECP6 |
-|               | BVA2    | 1         | 0         | 0         | N.A.                 | Valid input                   | OK              |      |
-|               | BVA3    | maxInt-1  | maxInt-1  | maxInt-1  | N.A.                 | Valid input                   | OK              |      |
-|               | BVA4    | maxInt    | maxInt    | maxInt    | N.A.                 | Valid input                   | OK              |      |
-|               | BVA5    | maxInt+1  | maxInt+1  | maxInt+1  | N.A.                 | Invalid input                 | OK              |      |
-|               | BVA6    | 0         | maxInt    | 0         | N.A.                 | Valid input                   | OK              |      |
-|               | BVA7    | 1         | maxInt-1  | 1         | N.A.                 | Valid input                   | OK              |      |
-|               | BVA8    | maxInt-1  | 0         | maxInt-1  | N.A.                 | Valid input                   | OK              |      |
-|               | BVA9    | 0         | 0         | maxInt    | N.A.                 | Valid input                   | OK              |      |
-|               | BVA10   | 0         | maxInt+1  | 0         | N.A.                 | Invalid input                 | OK              |      |
-|               | BVA11   | maxInt+1  | 1         | 1         | N.A.                 | Invalid input                 | OK              |      |
-|               | BVA12   | -1        | 0         | 0         | N.A.                 | Invalid input                 | OK              |      |
-|               | BVA13   | 0         | -1        | 0         | N.A.                 | Invalid input                 | OK              |      |
-|               | BVA14   | 0         | 0         | -1        | N.A.                 | Invalid input                 | OK              |      |
 
 
 
